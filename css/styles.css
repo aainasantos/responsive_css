@@ -65,7 +65,7 @@ hr {
     width: 30%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -192,23 +192,26 @@ font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 @media ( max-width: 960px){
+
     nav{
         padding-left: 10%;
      }
+
+     header{
+        flex-direction: column;
+        padding: 20% 0 10%;
+    }
+
      .nav_link{
          text-align: center;
          color: #0c1311;
-     }
-      
-     header{
-         flex-direction: column;
-         padding: 20% 0 10%;
-     }
- 
+     } 
+
      .intro, .img-div{
          flex-grow: 1;
          width: 80%;
      }
+
      .img-div{
         display: none;   
     }   
