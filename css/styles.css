@@ -1,0 +1,228 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height:100%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+    line-height: 2;
+}
+
+nav {
+    padding:.5% 10%;
+    text-align: left;
+    background-color: #EFFFFD;
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+header {
+    background-image: url("https://img.freepik.com/free-vector/romantic-cherry-blossom-background-flying-flowers-pink-blue-background-illustration_281653-402.jpg?size=626&ext=jpg&ga=GA1.2.987025481.1654659659");
+    background-size:cover;
+    color: #3EC1D3;
+    display: flex;
+    aspect-ratio: 10/7;
+    width: 100vw;
+    height: 90vh;
+}
+
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size:clamp(3rem, 5vw, 4rem);
+    padding-top: 3%;
+    width: max-content;
+    margin-left: 20%;
+}
+
+h2 {
+    font-family: 'Concert One', cursive;
+    font-weight: normal;
+    color: #30E3CA;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    color: #71C9CE;
+}
+
+hr {
+    border: dotted 10px;
+    border-bottom: none;
+    color: #D3EBCD;
+    margin: auto;
+    width: 30%;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer {
+    padding: 3%;
+    font-size: clamp(.7rem, 2vw, 1rem);
+}
+
+footer a {
+    margin: 1%;
+}
+
+footer a:hover {
+    color:#47bcf1;
+}
+
+/* NAVIGATION BAR */
+.nav_link {
+    padding: 3%;
+    color: #D5D8B5;
+    font-size: clamp(.8rem, 1.5vw, 2rem);
+}
+
+
+/* TOP SECTION */
+.top {
+    background-color: #EFFFFD;
+ 
+}
+.intro {
+    margin: auto;
+    font-size: clamp(1rem, 3vh, 1.5rem);
+    padding-bottom: 3%;    
+    width: 40%;
+}
+
+.title{
+    font-size: clamp(1.5rem, 4vh, 2.5rem);
+}
+
+.arduino-img {
+    width: 100%;
+    padding: 20% 20% 10% 0;
+    width: 50vw;
+    height: 90%;
+}
+
+
+/* MIDDLE SECTION */
+
+.img-aina {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; 
+    margin-bottom:  5%;  
+}
+
+.prof-intro {
+    width: 80%;
+    margin: auto;
+}
+
+#profile {
+    padding: 10%;
+}
+
+/* BOTTOM SECTION */
+.bottom {
+    padding: 7% 0 5%;
+}
+
+.profile_bot {
+    display: flex;
+    margin: auto;
+
+}
+
+.profile_bot div {
+    margin: auto;
+}
+
+.embedded-img {
+    height: 30vh;
+    width: 80%;
+    padding-top: 3%;
+}
+
+/* CONTACT SECTION */
+#contact {
+text-align: left;
+padding:5% 10% 3%;
+font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px){
+
+
+    /* Profile SECTION */
+    #profile{
+        padding-top: 20%;
+    }
+
+    /*PROFILE BOTTOM SECTION */
+    .profile_bot{
+        flex-direction: column;
+    }
+
+    .profile_bot div{
+        flex-grow: 1;
+        padding-bottom: 5%;
+    }
+
+    .embedded-img{
+        display: none;
+    }
+    
+    /* CONTACT SECTION */
+    #contact{
+        padding-bottom: 5%;
+    }
+
+    /* FOOTER */
+}
+
+@media ( max-width: 960px){
+    nav{
+        padding-left: 10%;
+     }
+     .nav_link{
+         text-align: center;
+         color: #0c1311;
+     }
+      
+     header{
+         flex-direction: column;
+         padding: 20% 0 10%;
+     }
+ 
+     .intro, .img-div{
+         flex-grow: 1;
+         width: 80%;
+     }
+     .img-div{
+        display: none;   
+    }   
+ 
+}
+
+@media (max-height: 460px) {
+    header{
+        padding: 5%;
+    }
+    h1{
+        padding-bottom: 0 ;
+        margin: auto;
+    }
+    
+}
+    
