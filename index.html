@@ -16,53 +16,60 @@
 </head>
 <body>
     <nav>
-        <a class="nav_link" href="#top">HOME</a>
-        <a class="nav_link" href="#profile">PROFILE</a>
-        <a class="nav_link" href="#contact">CONTACT</a>
+        <div>
+            <a class="nav_link" href="#top">HOME</a>
+            <a class="nav_link" href="#profile">PROFILE</a>
+            <a class="nav_link" href="#contact">CONTACT</a>
+            <strong class="nav__title">myBIO
+                <img class="nav__img" src="images/heart.png" alt="">
+            </strong>
+        </div>
+        
+        
     </nav>
-    <section class="top">
-        <header>
-                <div class="intro">
-                    <h1>Hi! I'm Aina!</h1>
-                    <h3 class="title">An Electronics Engineer</h3>
-                    <p>I'm also front-end developer. Who provide services and bring products to life.</p>
-                </div>
-                <div class="img-div">
-                    <img class="arduino-img" src="images/ard2.gif" alt="arduino-img">
-                </div>
-            
-        </header>
-    </section>
+    <header id="top">
+        <div class="flexblock">
+            <div class="front">
+                <h1>Hi! I'm Aina!</h1>
+                <h3 class="front front__title">An Electronics Engineer</h3>
+                <p class="front__text">I'm also front-end developer. Who provide services and bring products to life.</p>
+            </div>
+            <div class="front">
+                <img class="front front__img" src="images/ard2.gif" alt="arduino-img">
+            </div>        
+        </div>
+    </header>
+    
     <section id="profile">
-        <img class="img-aina" src="images/aina.jpg" alt="aina-img">
+        <img class="profile__img" src="images/aina.jpg" alt="aina-img">
         <h2>Hi There!</h2>
-        <p class="prof-intro">Some of my friends call me KULIT. Maybe I'm a naughty one? I really don't know😅. I'm a fan of the movie SNOWDEN🤓😎,and it makes me think that I can be as good and smart as him. And Lastly, I'm a person who never survive a day without coffee☕☕☕</p>
+        <p class="profile__text">Some of my friends call me KULIT. Maybe I'm a naughty one? I really don't know😅. I'm a fan of the movie SNOWDEN🤓😎,and it makes me think that I can be as good and smart as him. And Lastly, I'm a person who never survive a day without coffee☕☕☕</p>
     </section>
     <hr>
-    <section class="bottom">
-        <div class="profile_bot">
-            <div>
+    <section id="info">
+        <div class="flexblock">
+            <div class="info">
                 <h2>Goal</h2>
                 <p>To be great in everything I do.</p>
             </div>
-            <div>
+            <div class="info">
                 <h2>Education</h2>
                 <p>BS in Electronincs Engineering</p>
             </div>
         </div>
         <div>
-            <img class="embedded-img" src="images/embedded.jpg" alt="computer-img">
+            <img class="info__img" src="images/embedded.jpg" alt="computer-img">
         </div>
-        <div class="profile_bot">
-            <div>
+        <div class="flexblock">
+            <div class="info">
                 <h2>Skills</h2>
                 <p>HTML, CSS, Javascript</p>
             </div>
-            <div>
+            <div class="info">
                 <h2>Hobbies</h2>
                 <p>Dancing and singing</p>
             </div>
-            <div>
+            <div class="info">
                 <h2>Achievements</h2>
                 <p>Electronincs Engineer License</p>
             </div>

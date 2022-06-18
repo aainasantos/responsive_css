@@ -27,7 +27,7 @@ nav {
 
 header {
     background-image: url("https://img.freepik.com/free-vector/romantic-cherry-blossom-background-flying-flowers-pink-blue-background-illustration_281653-402.jpg?size=626&ext=jpg&ga=GA1.2.987025481.1654659659");
-    background-size:cover;
+    background-size: cover;
     color: #3EC1D3;
     display: flex;
     aspect-ratio: 10/7;
@@ -35,13 +35,12 @@ header {
     height: 90vh;
 }
 
-
 h1 {
     font-family: 'Kaushan Script', cursive;
-    font-size:clamp(3rem, 5vw, 4rem);
+    font-size: clamp(3rem, 6vw, 4rem);
     padding-top: 3%;
     width: max-content;
-    margin-left: 20%;
+    margin: auto;
 }
 
 h2 {
@@ -82,6 +81,13 @@ footer a:hover {
     color:#47bcf1;
 }
 
+/* FLEXBOX */
+
+.flexblock{
+    display: flex;
+    margin: auto;
+}
+
 /* NAVIGATION BAR */
 .nav_link {
     padding: 3%;
@@ -89,41 +95,48 @@ footer a:hover {
     font-size: clamp(.8rem, 1.5vw, 2rem);
 }
 
+.nav__title{
+    position: absolute;
+    right: 10%;
+}
+
+.nav__img{
+    width: 20px;
+}
+
 
 /* TOP SECTION */
-.top {
-    background-color: #EFFFFD;
- 
-}
-.intro {
+
+.front {
     margin: auto;
-    font-size: clamp(1rem, 3vh, 1.5rem);
-    padding-bottom: 3%;    
-    width: 40%;
+    padding-bottom: 3%; 
+    font-size: clamp(1rem, 2vw, 1.5rem);   
+    width: 60%;
 }
 
-.title{
-    font-size: clamp(1.5rem, 4vh, 2.5rem);
+.front__title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    width: 100%;
 }
 
-.arduino-img {
+.front__img {
     width: 100%;
     padding: 20% 20% 10% 0;
-    width: 50vw;
-    height: 90%;
+    width: 80vh;
+    height: 80%;
 }
 
 
 /* MIDDLE SECTION */
 
-.img-aina {
+.profile__img {
     width: 200px;
     height: 200px;
     border-radius: 100%; 
     margin-bottom:  5%;  
 }
 
-.prof-intro {
+.profile__text {
     width: 80%;
     margin: auto;
 }
@@ -133,21 +146,12 @@ footer a:hover {
 }
 
 /* BOTTOM SECTION */
-.bottom {
+.info {
     padding: 7% 0 5%;
-}
-
-.profile_bot {
-    display: flex;
-    margin: auto;
-
-}
-
-.profile_bot div {
     margin: auto;
 }
 
-.embedded-img {
+.info__img {
     height: 30vh;
     width: 80%;
     padding-top: 3%;
@@ -170,16 +174,8 @@ font-size: clamp(1rem, 1.5vw, 1.5rem);
     }
 
     /*PROFILE BOTTOM SECTION */
-    .profile_bot{
-        flex-direction: column;
-    }
 
-    .profile_bot div{
-        flex-grow: 1;
-        padding-bottom: 5%;
-    }
-
-    .embedded-img{
+    .info__img{
         display: none;
     }
     
@@ -197,22 +193,17 @@ font-size: clamp(1rem, 1.5vw, 1.5rem);
         padding-left: 10%;
      }
 
-     header{
+     .flexblock{
         flex-direction: column;
-        padding: 20% 0 10%;
-    }
-
-     .nav_link{
-         text-align: center;
-         color: #0c1311;
-     } 
-
-     .intro, .img-div{
-         flex-grow: 1;
-         width: 80%;
      }
 
-     .img-div{
+     .front, .info{
+         flex-grow: 1;
+         width: 80%;
+         margin: auto;
+     }
+
+     .front__img{
         display: none;   
     }   
  
@@ -225,7 +216,14 @@ font-size: clamp(1rem, 1.5vw, 1.5rem);
     h1{
         padding-bottom: 0 ;
         margin: auto;
+        font-size:clamp(1.5rem, 8vh, 6rem);
     }
-    
+    .front{
+        font-size: clamp(.5rem, 4vh, 2rem);
+    }
+
+    .front__title {
+        font-size: clamp(1rem, 4vh, 1.5rem);
+    }
 }
     
