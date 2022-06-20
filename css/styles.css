@@ -209,8 +209,11 @@ font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 @media (max-height: 460px) {
-    header {
-        padding: 5%;
+    nav{
+        padding: 0% 10%;
+    }
+    .nav__title, .nav__title{
+        font-size:clamp(.8rem, 1vh, 1rem);
     }
     h1 {
         padding-bottom: 0 ;
